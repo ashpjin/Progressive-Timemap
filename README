@@ -1,0 +1,27 @@
+This directory contains files and scripts necessary for the Progressive Loading Timemap.
+Author: Ashley Jin
+        CENS
+		UCLA 2012
+
+
+File Breakdown:
+- db_accessor.php: contains funtions for accessing the database
+- loader.php: is called to do progressive loading functions for the timemap
+
+- plantmap.css: contains visual information
+
+- plant_progressive.php: main script that renders the progressive timemap
+
+- timeline_tester.php: testing file for playing around with timemap features
+
+
+Known/Open Issues:
+- Still kind of slow to load points
+    -> use prepared statement?
+- All points are green, would like to differentiate between search_terms (e.g. "summer" -> orange)
+- Unable to load all datapoints, picking first 25 from each time interval to display 
+    -> there are many, many more that are never considered!
+- Some shown tweets are irrelevant/inappropriate
+    -> requires more filtering
+- Loads visualization with focus on the starting time (i.e. 2009)
+    -> would like to focus on current time
